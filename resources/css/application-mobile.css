@@ -15,7 +15,9 @@ div#main_menu .x-list-item{
 }
 
 div#ext-component-3 {
-	-webkit-column-count:2;
+	-webkit-column-count:4;
+	-webkit-column-width:120px
+}
 }
 .details{
 	 	text-align:justify ;
