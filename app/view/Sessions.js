@@ -4,7 +4,7 @@ Ext.define('Prdc.view.Sessions', {
 		config: {
 			fullscreen:true,
 			styleHtmlContent: true,
-			layout:'card',
+			layout: 'card',
 			items:[
 				{
 					xtype: 'toolbar',

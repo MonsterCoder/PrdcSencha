@@ -7,6 +7,7 @@ Ext.define('Prdc.view.SpeakerDetails', {
 	},
 	config: {
 		styleHtmlContent: true,
+		layout: 'card',
 		items:[
 			{
 				xtype:"toolbar",

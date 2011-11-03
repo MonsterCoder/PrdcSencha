@@ -13,6 +13,7 @@ Ext.define('Prdc.view.SessionDetails', {
 	},
 	config: {
 	    styleHtmlContent: true,
+		layout: 'card',
 		items: [
 			{
 				xtype: 'toolbar',

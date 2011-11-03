@@ -3,7 +3,13 @@ Ext.define('Prdc.view.Menu', {
     extend: 'Ext.Container',
     config: {
         fullscreen: true,
-        layout: 'fit',
+        layout: {
+			type: 'card',
+			animation: {
+				type: 'slide',
+				direction: 'left'
+			}
+		},
         items: [
 			{
 				xtype:'toolbar',

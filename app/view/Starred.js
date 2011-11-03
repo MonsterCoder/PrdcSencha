@@ -3,8 +3,8 @@ Ext.define('Prdc.view.Starred', {
 	id:'Starred',
 	config: {
 				fullscreen:true,
-				layout:'card',
 				styleHtmlContent: true,
+				layout: 'card',
 				items:[
 					{
 						xtype: 'toolbar',

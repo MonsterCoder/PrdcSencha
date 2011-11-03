@@ -13,7 +13,8 @@ Ext.define('Prdc.controller.Main', {
 	],
 
     init: function() {
-       Ext.Viewport.add(this.getMenuView().create());
+		Ext.Viewport.setLayout({type: 'card', animation: {type: 'slide'}});
+        Ext.Viewport.add(this.getMenuView().create());
 		
 		this.control({
 			'#main_menu': {

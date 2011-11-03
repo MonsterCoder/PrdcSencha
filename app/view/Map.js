@@ -4,7 +4,7 @@ Ext.define('Prdc.view.Map', {
 	config: {
 			fullscreen:true,
 			styleHtmlContent: true,
-			layout:'card',
+			layout: 'card',
 			items:[
 				{
 					xtype: 'toolbar',
