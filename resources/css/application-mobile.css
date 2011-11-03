@@ -13,13 +13,15 @@ div#main_menu .x-list-item{
 	width: 120px;
 	text-align: center;
 	float:left;
+	margin-left: 50px;
 }
 
--div#ext-component-3 {
-	-webkit-column-count:3;
-	-webkit-column-width:100px;
-	background:red;
+div#main_menu  img{
+	border-radius: 5px;
+	box-shadow: 10px 10px 5px #888;
 }
+
+
 .details{
 	 	text-align:justify ;
 		margin: 6px 12px 6px 6px;

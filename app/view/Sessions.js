@@ -60,7 +60,9 @@ Ext.define('Prdc.view.Sessions', {
 						   }
 						   this.items.items[2].doRefresh(this.items.items[2]);
 						}
-					});
+					}
+					
+				);
 		},
 		doRefreshList: function(){
 			if (this.items.items[2].getStore()){
