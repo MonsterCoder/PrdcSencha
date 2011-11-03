@@ -14,10 +14,7 @@ Ext.define('Prdc.view.Menu', {
 				id: 'main_menu',
                 xtype: 'list',
 				store: 'MenuItems',	
-				itemTpl: '<div class="main_menu_item"><img src="resources/images/{image}" alt="{image}" class="pic"/><span> {name}</span></div>',
-				initComponent: function() {
-								this.setScrollable(false);
-							}
+				itemTpl: '<div class="main_menu_item"><img src="resources/images/{image}" alt="{image}" class="pic"/><span> {name}</span></div>'
             }
         ]		
     }

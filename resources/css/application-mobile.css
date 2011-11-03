@@ -12,12 +12,13 @@
 div#main_menu .x-list-item{
 	width: 120px;
 	text-align: center;
+	float:left;
 }
 
-div#ext-component-3 {
-	-webkit-column-count:4;
-	-webkit-column-width:120px
-}
+-div#ext-component-3 {
+	-webkit-column-count:3;
+	-webkit-column-width:100px;
+	background:red;
 }
 .details{
 	 	text-align:justify ;
