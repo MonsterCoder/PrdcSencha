@@ -105,6 +105,15 @@ div#main_menu  img{
 	height: 85px;
 }
 
+.details .header  .info img{ 
+	width: 16px;
+	height: 16px;
+	float:none;
+	-webkit-box-shadow: none;
+	margin-right: 0.5em;
+	margin-bottom: 1px;
+}
+
 .details .header  .info h5{
 	margin-bottom:1px;
 
