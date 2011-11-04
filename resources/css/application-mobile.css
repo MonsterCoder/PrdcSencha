@@ -79,8 +79,37 @@ div#main_menu  img{
 .details{
 	 	text-align:justify ;
 		margin: 6px 12px 6px 6px;
-		
 }
+
+.details .header  {
+	display:block;	
+	-webkit-border-radius: 5px;
+	clear:both;
+
+}
+.details .header  img {
+	float:left;
+	width:64px;
+	height:80px;
+	margin-right: 2em;
+	margin-bottom: 3px;
+	-webkit-box-shadow: 3px 3px 3px #666;
+	
+}
+
+.details .header  .info{
+	display:block;	
+	font-size: 0.75em;
+	color:#888;
+	overflow: hidden;  
+	height: 85px;
+}
+
+.details .header  .info h5{
+	margin-bottom:1px;
+
+}
+
 
 .star{
             display:block;
@@ -105,15 +134,9 @@ div#main_menu  img{
 	float:left;
 	margin: 2px;
  }
-.details img {
-	float:left;
-	width:64px;
-	height:80px;
-	margin-right: 5px;
-	margin-bottom: 3px;
-}
 
- .samll {
+
+ .small {
 	font-size: 0.65em;
 } 
 
@@ -142,4 +165,10 @@ div#main_menu  img{
 	background:none;
 	border:none;
  }
+ 
+ span.tag  {
+	font-weight:normal;
+  	font-size:0.8em;
+	color:#678;
+}
  

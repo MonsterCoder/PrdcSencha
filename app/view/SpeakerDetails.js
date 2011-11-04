@@ -25,7 +25,7 @@ Ext.define('Prdc.view.SpeakerDetails', {
 			},
 			{
 				xtype:"panel",
-				tpl:"<div ><div class='details'><img src='http://prdc.herokuapp.com/assets/speakers/{picture}'/><div>{bio}</div></div></div>"
+				tpl:"<div class='details'><div class='header'><img src='http://prdc.herokuapp.com/assets/speakers/{picture}'><div class='info'><h5>{location}</h5><h5>{email}</h5><h5>{blog}</h5><h5>{twitter}</h5><h5>{website}</h5></div></div><div>{bio}</div>"
 			}
 		]
 	},
