@@ -51,13 +51,12 @@ Ext.define('Prdc.view.Sessions', {
 						delegate: '#tagfilter',
 						change: function(sender, value) {
 						   var store = this.items.items[2].getStore();
-						   if (value === ''){
-								store.clearFilter();
-						   } else {
-							var tag = value.charAt(0).toUpperCase() + value.slice(1);
-							store.filterBy(function(item) { 
+						   store.clearFilter();
+						   if (value !== ''){
+								var tag = value.charAt(0).toUpperCase() + value.slice(1);
+								store.filterBy(function(item) { 
 								     return	item.data.tags.indexOf(tag) > -1;
-									});
+								});
 						   }
 						   this.items.items[2].doRefresh(this.items.items[2]);
 						}

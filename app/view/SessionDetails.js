@@ -42,7 +42,7 @@ Ext.define('Prdc.view.SessionDetails', {
 			{
 				xtype:'panel',
 				scroll:'vertical',
-				tpl:'<div class="details"><h4 class="session_title">{title}</h4><h6><span>Room: <tpl if="room != null"> {room}<tpl else> TBA </tpl></span><span> <tpl if="start != null"> {start}-</tpl> <tpl if="finish != null">{finish}</tpl></span></h6><div>{abstract}</div></div>'
+				tpl:'<div class="details"><h4 class="session_title">{title}</h4>{tags}<h6><span>Room: <tpl if="room != null"> {room}<tpl else> TBA </tpl></span><span> <tpl if="start != null"> {start}-</tpl> <tpl if="finish != null">{finish}</tpl></span></h6><div>{abstract}</div></div>'
 			}
 		]
 		
