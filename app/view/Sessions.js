@@ -7,6 +7,7 @@ Ext.define('Prdc.view.Sessions', {
 			layout: 'card',
 			items:[
 				{
+					id: 'sessionstoolbar',
 					xtype: 'toolbar',
 					docked:'top',
 					ui:'light',
@@ -115,7 +116,30 @@ Ext.define('Prdc.view.Sessions', {
 								//sender.setHidden(true);
 							}
 						});	
-				
+			this.on({
+							delegate:'#sessionstoolbar',
+							drag: function(sender) {
+								//var filterbar = Ext.ComponentQuery.query('toolbar#filterbar');
+								//var hideFilter = Ext.ComponentQuery.query('#filterbar');
+								//var showFilter = Ext.ComponentQuery.query('#filterbar');
+								
+								var filterbar = this.items.items[1];
+								var hideFilter =this.items.items[0].items.items[2];
+								var showFilter = this.items.items[0].items.items[1];
+								
+								if (filterbar.getHidden()){
+									filterbar.setHidden(false);
+									showFilter.setHidden(true);
+									hideFilter.setHidden(false);
+
+								} else {
+									filterbar.setHidden(true);
+									showFilter.setHidden(false);
+									hideFilter.setHidden(true);
+								}
+								//sender.setHidden(true);
+							}
+						});	
 
 		},
 		doRefreshList: function(){
