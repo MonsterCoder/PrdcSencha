@@ -41,7 +41,7 @@ Ext.define('Prdc.view.Sessions', {
 						xtype:'list',
 						store:'SessionsStore',
 						scroll:'vertical',
-						itemTpl: '<h5>{title}</h5><h6><span>Room: {room}</span><span> Time: {start} - {finish}</span></h6>',
+						itemTpl: '<h5>{title}</h5><h6><span>Room: <tpl if="room != null"> {room}<tpl else> TBA </tpl></span><span> <tpl if="start != null"> {start}-</tpl> <tpl if="finish != null">{finish}</tpl></span></h6>',
 						placeHolder: 'loading...'
 				}
 			]
