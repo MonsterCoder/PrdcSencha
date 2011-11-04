@@ -16,6 +16,15 @@ div#main_menu .x-list-item{
 	margin-left: 35px;
 }
 
+.x-list-item  h5{
+  white-space: nowrap;
+  width: 100%;                   
+  overflow: hidden;              
+  text-overflow:    ellipsis;
+  margin-bottom: 0.5em;
+  margin-left:0.5em;
+}
+
 div#main_menu  img{
 	border-radius: 5px;
 	box-shadow: 10px 10px 5px #888;
@@ -82,5 +91,10 @@ div#main_menu  img{
 	margin: 2px;
 	width:64px;
 	Heigh:86px;
+ }
+ 
+ div#star{
+	background:none;
+	border:none;
  }
  

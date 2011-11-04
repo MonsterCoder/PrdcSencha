@@ -40,7 +40,7 @@ Ext.define('Prdc.view.Sessions', {
 						xtype:'list',
 						store:'SessionsStore',
 						scroll:'vertical',
-						itemTpl: '{title}',
+						itemTpl: '<h5>{title}</h5>',
 						placeHolder: 'loading...'
 				}
 			]
