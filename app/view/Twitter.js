@@ -12,12 +12,22 @@ Ext.define('Prdc.view.Twitter',{
 				title:"Twitter",
 				docked: 'top',
 				ui:'light',
+				defaults: {
+                        iconMask: true,
+                        ui      : 'plain'
+                },
 				items: [
 					{
 						id:'homebutton',
 						xtype:'button',
 						ui:'back',
 						text:'back'
+					},
+					{
+						id:'refreshtwitter',
+						ui:'plain',
+						iconCls:'refresh',
+						docked:'right'
 					}
 				]
 			},

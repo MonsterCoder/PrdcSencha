@@ -95,6 +95,11 @@ Ext.define('Prdc.controller.Main', {
 								infowindow.open(map, marker);
 								
 				}
+			},
+			'#refreshtwitter': {
+				tap: function(sender) {
+					this.getTwitterStoreStore().load();
+				}
 			}
 		});
     },
