@@ -14,6 +14,7 @@ Ext.define('Prdc.view.Menu', {
 			{
 				xtype:'toolbar',
 				title:'Prdc2011',
+				ui:'light',
 				docked:'top'
 			},
             {

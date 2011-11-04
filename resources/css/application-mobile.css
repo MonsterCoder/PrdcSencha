@@ -5,15 +5,24 @@
 }
 
  p {
- 	text-align:justify ;
+ 	-webkit-text-align:justify ;
  }
+ 
+div#main_menu {
 
+}
 
 div#main_menu .x-list-item{
 	width: 120px;
 	text-align: center;
 	float:left;
-	margin-left: 35px;
+	margin-left: 2em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	-webkit-border-radius: 5px;
+	-webkit-box-shadow: 7px 7px 4px #666;
+	border: solid 1px #aaa;
+	
 }
 
 .x-list-item  h5 {
@@ -63,8 +72,7 @@ div#main_menu .x-list-item{
 
 
 div#main_menu  img{
-	border-radius: 5px;
-	box-shadow: 10px 10px 5px #666
+
 }
 
 
