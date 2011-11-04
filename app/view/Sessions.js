@@ -11,19 +11,38 @@ Ext.define('Prdc.view.Sessions', {
 					docked:'top',
 					ui:'light',
 					title: 'Sessions',
+					defaults: {
+                        iconMask: true,
+                        ui      : 'plain'
+                    },
 					items:[
 						{
 							id:'homebutton',
 							xtype:'button',
 							ui   : 'back',
 							text:'back'
+						}, 		
+						{ 
+							id:'showfilter',
+							docked:'right',
+							ui:'plain',
+							iconCls:'arrow_down'
+						},						
+						{ 
+							id:'hidefilter',
+							docked:'right',
+							ui:'plain',
+							iconCls:'arrow_up',
+							hidden: true
 						}
 					]
 				},
 				{
+					id:'filterbar',
 					xtype: 'toolbar',
 					docked:'top',
 					ui: 'searchbar',
+					hidden:true,
 					items: [
 						{ 
 							xtype: 'component',
@@ -62,7 +81,42 @@ Ext.define('Prdc.view.Sessions', {
 						}
 					}
 					
-				);
+				);	
+
+			this.on({
+							delegate:'#showfilter',
+							tap: function(sender) {
+								//var filterbar = Ext.ComponentQuery.query('toolbar#filterbar');
+								//var hideFilter = Ext.ComponentQuery.query('#filterbar');
+								//var showFilter = Ext.ComponentQuery.query('#filterbar');
+								
+								var filterbar = this.items.items[1];
+								var hideFilter =this.items.items[0].items.items[2];
+								var showFilter = sender;
+								filterbar.setHidden(false);
+								showFilter.setHidden(true);
+								hideFilter.setHidden(false);
+								//sender.setHidden(true);
+							}
+						});				
+			this.on({
+							delegate:'#hidefilter',
+							tap: function(sender) {
+								//var filterbar = Ext.ComponentQuery.query('toolbar#filterbar');
+								//var hideFilter = Ext.ComponentQuery.query('#filterbar');
+								//var showFilter = Ext.ComponentQuery.query('#filterbar');
+								
+								var filterbar = this.items.items[1];
+								var hideFilter =sender;
+								var showFilter = this.items.items[0].items.items[1];
+								filterbar.setHidden(true);
+								showFilter.setHidden(false);
+								hideFilter.setHidden(true);
+								//sender.setHidden(true);
+							}
+						});	
+				
+
 		},
 		doRefreshList: function(){
 			if (this.items.items[2].getStore()){
