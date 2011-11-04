@@ -44,15 +44,19 @@ Ext.define('Prdc.view.Sessions', {
 					docked:'top',
 					ui: 'searchbar',
 					hidden:true,
+					defaults: {
+                        iconMask: true,
+                        ui      : 'plain'
+                    },
 					items: [
 						{ 
-							xtype: 'component',
-							html : '<span class="small">Tag</span>'
+							iconCls: 'search'
 						},
 						{
 							id:'tagfilter',
 							xtype: 'textfield',
-							name: 'tagfilter'
+							name: 'tagfilter',
+							placeHolder: 'filter by tag...'
 						}
 					]
 				},
