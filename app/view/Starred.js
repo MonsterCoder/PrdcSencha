@@ -26,9 +26,9 @@ Ext.define('Prdc.view.Starred', {
 							store:'StarredSessionsStore',
 							scroll:'vertical',
 							itemTpl: '<h5>{session.title}<h5>',
-							placeHolder: 'No favourate session ...',
-							emptyText: 'Currently you have no starred session.'
+							placeHolder: 'No favourate session ...'
 					}
 				]
 			}
+
 });

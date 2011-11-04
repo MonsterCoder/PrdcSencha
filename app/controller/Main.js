@@ -55,20 +55,22 @@ Ext.define('Prdc.controller.Main', {
 					
 				  if (sender.iconElement.hasCls('star')) {
 					sender.data.starred = true;
-					var model =  Ext.create('Prdc.model.Favourate', {session_id: sender.data.id, session: sender.data});
+					var model =  Ext.create('Prdc.model.Favourate', {id: sender.data.id, session: sender.data});
 					model.save();
-					store.add(model);
+					store.load();
 					sender.iconElement.replaceCls('star', 'favourate');
 				  } else {
 		
-					var idx = store.find('session_id', sender.data.id);
+					var idx = store.find('id', sender.data.id);
+					var Favourate = Ext.ModelManager.getModel('Prdc.model.Favourate');
 					if (idx > 0)
 					{
-						var Favourate = Ext.ModelManager.getModel('Prdc.model.Favourate');
 						Favourate.load(store.getAt(idx).data.id, {success: function(favourate) { favourate.destroy();}});
 						
 						sender.data.starred = false;
 						store.removeAt(idx);
+					} else {
+						Favourate.load(store.getAt(0).data.id, {success: function(favourate) { favourate.destroy();}});
 					}
 					store.load();
 					sender.iconElement.replaceCls('favourate','star');
