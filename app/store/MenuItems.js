@@ -4,7 +4,7 @@ Ext.define('Prdc.store.MenuItems', {
 	data: [
 			{name: 'Sessions', image:'session.png'},
 			{name: 'Speakers', image:'speaker.png'},
-			{name: 'Starred', image:'star.png'},
+			{name: 'Starred', image:'user_fave.png'},
 			{name: 'Twitter', image:'twitter.png'},
 			{name: 'Schedule', image:'schedule.png'},
 			{name: 'Map', image:'locate.png'},

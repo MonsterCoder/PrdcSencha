@@ -106,12 +106,13 @@ div#main_menu  img{
 }
 
 .details .header  .info img{ 
-	width: 16px;
-	height: 16px;
+	width: 1.2em;
+	height: 1.2em;
 	float:none;
 	-webkit-box-shadow: none;
-	margin-right: 0.5em;
-	margin-bottom: 1px;
+	margin: 0;
+	margin-right: 1em;
+
 }
 
 .details .header  .info h5{
@@ -165,7 +166,6 @@ div#main_menu  img{
 	font-size: 0.8em;
 	margin-bottom: 2px;
 	color: #335577;
-
  }
  
  div#star{
