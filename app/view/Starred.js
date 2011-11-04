@@ -10,6 +10,7 @@ Ext.define('Prdc.view.Starred', {
 						xtype: 'toolbar',
 						docked:'top',
 						title: 'Favourate',
+						ui:'light',
 						items:[
 							{
 								id:'homebutton',

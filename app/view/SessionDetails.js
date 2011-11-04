@@ -18,6 +18,7 @@ Ext.define('Prdc.view.SessionDetails', {
 			{
 				xtype: 'toolbar',
 				docked:'top',
+				ui:'light',
 				items:[
 					{
 						id: 'sessiondetailsback',

@@ -13,6 +13,7 @@ Ext.define('Prdc.view.SpeakerDetails', {
 				xtype:"toolbar",
 				title: "speakername",
 				docked:"top",
+				ui:'light',
 				items: [
 					{
 						id: "detailsback",

@@ -11,6 +11,7 @@ Ext.define('Prdc.view.Speakers', {
 				xtype:"toolbar",
 				title:"Speakers",
 				docked: 'top',
+				ui:'light',
 				items: [
 					{
 						id:'homebutton',

@@ -10,6 +10,7 @@ Ext.define('Prdc.view.Map', {
 					xtype: 'toolbar',
 					docked:'top',
 					title: 'Map',
+					ui:'light',
 					items:[
 						{
 							id:'homebutton',

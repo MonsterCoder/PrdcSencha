@@ -9,6 +9,7 @@ Ext.define('Prdc.view.Sessions', {
 				{
 					xtype: 'toolbar',
 					docked:'top',
+					ui:'light',
 					title: 'Sessions',
 					items:[
 						{

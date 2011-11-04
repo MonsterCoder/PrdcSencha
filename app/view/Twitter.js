@@ -11,6 +11,7 @@ Ext.define('Prdc.view.Twitter',{
 				xtype:"toolbar",
 				title:"Twitter",
 				docked: 'top',
+				ui:'light',
 				items: [
 					{
 						id:'homebutton',

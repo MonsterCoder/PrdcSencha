@@ -10,6 +10,7 @@ Ext.define('Prdc.view.Schedule', {
 					xtype: 'toolbar',
 					docked:'top',
 					title: 'Sessions',
+					ui:'light',
 					items:[
 						{
 							id:'homebutton',
