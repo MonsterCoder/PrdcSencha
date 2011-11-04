@@ -16,7 +16,7 @@ div#main_menu .x-list-item{
 	margin-left: 35px;
 }
 
-.x-list-item  h5{
+.x-list-item  h5 {
   white-space: nowrap;
   width: 100%;                   
   overflow: hidden;              
@@ -24,6 +24,18 @@ div#main_menu .x-list-item{
   margin-bottom: 0.5em;
   margin-left:0.5em;
 }
+
+.x-list-item  h6{
+  margin-left:0.8em;
+  white-space: nowrap;
+  overflow: hidden;              
+  text-overflow:    ellipsis;
+  font-size: 0.8em;
+  font-weight:normal;
+  color: #555;
+}
+
+
 
 div#main_menu  img{
 	border-radius: 5px;
