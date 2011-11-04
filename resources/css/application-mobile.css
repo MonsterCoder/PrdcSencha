@@ -154,25 +154,24 @@ div#main_menu  img{
 	margin: 0.5em;
  }
  
- .sponsor {
-	position:relative;
-	display: block;
-	clear:both;
- }
- .sponsor  h5 {
-	margin: 2px;
-	font-weight:normal;
- }
-  .sponsor  img {
-	float:left;
-	margin: 2px;
-	width:64px;
-	Heigh:86px;
+  #Sponsors  h4 {
+  	font-size: 1.6em;
+	margin-bottom: 2px;
+	text-align: left;
+	color: #333333;
+ }  
+ 
+ #Sponsors  h5 {
+	font-size: 0.8em;
+	margin-bottom: 2px;
+	color: #335577;
+
  }
  
  div#star{
 	background:none;
 	border:none;
+	padding: 5px;
  }
  
  span.tag  {

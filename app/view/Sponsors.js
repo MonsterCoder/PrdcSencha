@@ -23,8 +23,9 @@ Ext.define('Prdc.view.Sponsors', {
 				{
 							xtype:"panel",
 							scroll:"vertical",
-							html:'<h4>This mobile-app provided by:</h4> <div class="sponsor"><img src="resources/images/georgechen2.jpg" /> <div><h5>George Chen, (MonsterCoder)</h5><h5>twitter: Georgec_monster</h5><h5>email: MonsterCoder@gmail.com</h5></div></div><div class="sponsor"><img src="resources/images/amirbarylko.jpg" /><div><h5>Amir Barylko, <a href="http://www.maventhought.com">MavenThought Inc</a></h5><h5>twitter: abarylko<h5/><h5>email: amir@barylko.com</h5><div/></div>'
+							html:"<h3>This mobile-app provided by:</h3> <h4>George Chen</h4><h5>Monstercoder</h5><div class='details'><div class='header'><img src='resources/images/georgechen2.jpg'/><div class='info'><img src='resources/images/location.png'>Winnipeg MB<br/><img src='resources/images/email.png'>MonsterCoder@gmail.com<br/><img src='resources/images/twitter.png'>@Georgec_monster<br/><img src='resources/images/website.png'>http://github.com/Monster</div></div><h4>Amir Barylko</h4><h5>Maventhought Inc.</h5><div class='header'><img src='resources/images/amirbarylko.jpg' /><div class='info'><img src='resources/images/location.png'>Winnipeg MB<br/><img src='resources/images/email.png'>amir@barylko.com<br/><img src='resources/images/twitter.png'>abarylko<br/><img src='resources/images/website.png'>http://www.maventhought.com</div></div>"
 				}
 			]
 		}
 });
+
