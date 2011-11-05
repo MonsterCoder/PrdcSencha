@@ -13,25 +13,34 @@ div#main_menu {
 }
 
 div#main_menu .x-list-item{
-	width: 120px;
+	opacity:0.9;
+	width:95px;
+	height:105px;
+	font-size:0.8em;
 	text-align: center;
 	float:left;
-	margin-left: 2em;
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
+	margin-left: 2.1em;
+	margin-top: 0.2em;
+}
+
+div#main_menu .x-list-item img{
+	padding:5px;
+	width:60px;
+	height:60px;
+	margin-bottom: 3px;
 	-webkit-border-radius: 5px;
-	-webkit-box-shadow: 7px 7px 4px #666;
 	border: solid 1px #aaa;
-	
+	-webkit-box-shadow: 3px 3px 2px #666;
 }
 
 .x-list-item  h5 {
   white-space: nowrap;
   width: 100%;                   
   overflow: hidden;              
-  text-overflow:    ellipsis;
-  margin-bottom: 0.5em;
-  margin-left:0.5em;
+  -webkit-text-overflow: ellipsis;
+  margin-bottom: 1px;
+  margin-left:3px;
+  margin-right:3px;
 }
 
 .x-panel h4 {
@@ -39,17 +48,18 @@ div#main_menu .x-list-item{
     font-family: "League-Gothic",Courier;
     text-align: center;
 	font-weight: bold;
-	font-size: 1.6em;
-	margin-bottom:1em;
-	line-height:1em;
+	font-size: 1em;
+	margin-bottom:3px;
+	line-height:1.3em;
 }
 
 .x-panel h6 {
-	  font-size: 0.8em;
-  font-weight:normal;
+	font-size: 0.8em;
+    font-weight:normal;
   	background: #707070;
 	color: #eee;
   	padding: 5px;
+  	margin-bottom:3px;
 }
 
 .x-panel  {
@@ -61,7 +71,7 @@ div#main_menu .x-list-item{
   margin-left:0.8em;
   white-space: nowrap;
   overflow: hidden;              
-  text-overflow:    ellipsis;
+  -webkit-text-overflow:    ellipsis;
   background: none;
   color: #555;
   	padding: 1px;
@@ -78,7 +88,7 @@ div#main_menu  img{
 
 .details{
 	 	text-align:justify ;
-		margin: 6px 12px 6px 6px;
+		margin: 6px;
 }
 
 .details .header  {
