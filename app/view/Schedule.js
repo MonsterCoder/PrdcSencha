@@ -21,9 +21,38 @@ Ext.define('Prdc.view.Schedule', {
 					]
 				},
 				{
-					xtype:'panel',
-					html: 'Coming soon ...'
+					xtype:'carousel',
+					layout:'card',
+					    items: [
+									{
+										xtype: 'list',
+										items: {
+											xtype: 'toolbar',
+											dock: 'top',
+											title: 'Room 1'
+										},
+
+										store: {
+											fields: ['name'],
+											data: [
+												{name: 'Rob'},
+												{name: 'Ed'},
+												{name: 'Jacky'},
+												{name: 'Jamie'},
+												{name: 'Tommy'},
+												{name: 'Abe'}
+											]
+										},
+
+										itemTpl: '{name}'
+									},
+
+								]
+					
 				}
 			]
 	}
 });
+
+
+

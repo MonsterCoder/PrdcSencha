@@ -9,7 +9,9 @@ Ext.define('Prdc.controller.Main', {
 	'SpeakerStore',
 	'SessionsStore',
 	'TwitterStore',
-	'StarredSessionsStore'
+	'StarredSessionsStore',
+	'ScheduleStore1',
+	'ScheduleStore2'
 	],
 
     init: function() {
@@ -108,7 +110,7 @@ Ext.define('Prdc.controller.Main', {
 	onMenuItemSelected: function(container, item) {
 		//alert(item.data.name);
 		this.changeView(item.data.name);
-		container.deSelect(item);
+		//container.deSelect(item);
 	},
 	onSpeakersSelected: function(container, item) {
 		var previous = Ext.Viewport.getActiveItem();
