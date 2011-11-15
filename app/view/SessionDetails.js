@@ -42,7 +42,18 @@ Ext.define('Prdc.view.SessionDetails', {
 			{
 				xtype:'panel',
 				scroll:'vertical',
-				tpl:'<div class="details"><h4 class="session_title">{title}</h4><span class="tag">{tags}</span><h6><span>Room: <tpl if="room != null"> {room}<tpl else> TBA </tpl></span><span> <tpl if="start != null"> {start}-</tpl> <tpl if="finish != null">{finish}</tpl></span></h6><div>{abstract}</div></div>'
+				tpl:Ext.create('Ext.XTemplate','<div class="details"><h4 class="session_title">{title}</h4><span class="tag">{tags}</span><h6><span>Room: <tpl if="room != null"> {room}<tpl else> TBA </tpl></span><span> <tpl if="start != null"> {[this.formatDueDate(values.start)]} {[this.formatTime(values.start)]}</tpl></span></h6><div>{abstract}</div></div>',{               formatDueDate: function(date) {
+                    date = date.split('T')[0];
+
+                    var format = "M j";
+                        parsed = new Date(Ext.Date.parse(date, "Y-m-d"));
+                    return Ext.Date.format(parsed, format);
+                                    },
+                formatTime: function (date){
+                	return date.split('T')[1].split(':')[0]+':'+date.split('T')[1].split(':')[1];
+                }
+                                    
+            }),
 			}
 		]
 		
