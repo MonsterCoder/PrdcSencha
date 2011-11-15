@@ -66,7 +66,7 @@ Ext.define('Prdc.view.Sessions', {
 						store:'SessionsStore',
 						scroll:'vertical',
 						grouped: true,
-						itemTpl: Ext.create('Ext.XTemplate','<h5>{title}</h5><h6><span>Room: <tpl if="room != null"> {room}, <tpl else> TBA </tpl></span><span> <tpl if="start != null"> {[this.formatDueDate(values.start)]} {[this.formatTime(values.start)]}</tpl> </span></h6>',{
+						itemTpl: Ext.create('Ext.XTemplate','<h5>{title}</h5><h6><span> <tpl if="start != null"> {[this.formatDueDate(values.start)]} {[this.formatTime(values.start)]}</tpl> </span>  <span> @ <tpl if="room != null"> {room}, <tpl else> TBA </tpl></span></h6>',{
                 formatDueDate: function(date) {
                     date = date.split('T')[0];
 
@@ -75,7 +75,15 @@ Ext.define('Prdc.view.Sessions', {
                     return Ext.Date.format(parsed, format);
                                     },
                 formatTime: function (date){
-                	return date.split('T')[1].split(':')[0]+':'+date.split('T')[1].split(':')[1];
+					var hour = date.split('T')[1].split(':')[0];
+					var minu = date.split('T')[1].split(':')[1];
+					var am = "PM";
+					
+					if (hour < "12") {
+						am = "AM";
+					}
+					
+                	return hour+':'+minu + ' ' +am;
                 }
                                     
             }),
