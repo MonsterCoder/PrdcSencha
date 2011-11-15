@@ -65,7 +65,16 @@ Ext.define('Prdc.view.Sessions', {
 						xtype:'list',
 						store:'SessionsStore',
 						scroll:'vertical',
-						itemTpl: '<h5>{title}</h5><h6><span>Room: <tpl if="room != null"> {room}<tpl else> TBA </tpl></span><span> <tpl if="start != null"> {start}-</tpl> <tpl if="finish != null">{finish}</tpl></span></h6>',
+						itemTpl: Ext.create('Ext.XTemplate','<h5>{title}</h5><h6><span>Room: <tpl if="room != null"> {room}<tpl else> TBA </tpl></span><span> <tpl if="start != null"> {[this.formatDueDate(values.start)]}-</tpl> <tpl if="finish != null">{[this.formatDueDate(values.finish)]} </tpl></span></h6>',{
+                formatDueDate: function(date) {
+                    date = date.split('T')[0];
+
+                    var format = "j M Y";
+                        parsed = new Date(Ext.Date.parse(date, "Y-m-d"));
+                    
+                    return date;
+                }
+            }),
 						placeHolder: 'loading...'
 				}
 			]

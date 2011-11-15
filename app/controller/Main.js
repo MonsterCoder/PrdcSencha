@@ -2,7 +2,7 @@ Ext.define('Prdc.controller.Main', {
 	extend: 'Ext.app.Controller',
 	autoCreateViewport: true,
     views : [
-        'Menu','Speakers','SpeakerDetails', 'Sessions', 'SessionDetails','Twitter', 'Starred','Schedule','Map', 'Sponsors'
+        'Menu','Speakers','SpeakerDetails', 'Sessions', 'SessionDetails','Twitter', 'Starred','Schedule','Map', 'Authors'
     ],
 	stores: [
 	'MenuItems',

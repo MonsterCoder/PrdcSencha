@@ -8,7 +8,7 @@ Ext.define('Prdc.store.MenuItems', {
 			{name: 'Twitter', image:'twitter2.png'},
 			{name: 'Schedule', image:'schedule.png'},
 			{name: 'Map', image:'locate.png'},
-			{name: 'Sponsors', image:'sponsor.png'}
+			{name: 'Authors', image:'authors.png'}
 	],
 	autoLoad:true
 });
