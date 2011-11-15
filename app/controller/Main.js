@@ -43,7 +43,7 @@ Ext.define('Prdc.controller.Main', {
 				tap: function(sender) {
 					//var previous = Ext.Viewport.getActiveItem();
 					var store =	this.getSpeakerStoreStore();
-					store.filters.clear();
+					store.clearFilter();
 					store.filter('id', sender.data.speakers[0]);
 					this.changeView('Speakers');
 					//Ext.Viewport.getActiveItem().previous = previous;
@@ -108,6 +108,7 @@ Ext.define('Prdc.controller.Main', {
 	onMenuItemSelected: function(container, item) {
 		//alert(item.data.name);
 		this.changeView(item.data.name);
+		container.deSelect(item);
 	},
 	onSpeakersSelected: function(container, item) {
 		var previous = Ext.Viewport.getActiveItem();
