@@ -25,6 +25,8 @@ Ext.define('Prdc.view.Speakers', {
 						id:"speakerslist",
 						xtype:"list",
 						store:"SpeakerStore",
+						grouped: true,
+            			indexBar: true,
 						scroll:"vertical",
 						itemTpl: "<h5>{first_name} {last_name}</h5>"
 			}

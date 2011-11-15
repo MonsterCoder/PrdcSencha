@@ -9,6 +9,10 @@ Ext.define('Prdc.store.SpeakerStore', {
 			root: 'speakers'
 		}
     },
+    sorters: 'last_name',						
+	getGroupString: function(r){
+										        return r.get('last_name')[0]
+	},
 
 	autoLoad:true
 });
