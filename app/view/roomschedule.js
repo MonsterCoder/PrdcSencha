@@ -2,6 +2,7 @@ Ext.define("Prdc.view.roomschedule", {
 	extend: "Ext.List",
 	xtype: "roomSchedule",
 	config:{
+		layout:'card',
 		styleHtmlContent: true,
 		itemTpl:Ext.create('Ext.XTemplate', '<div class="left">{[this.getTime(values.start)]}</div>, {room},<div class="box">{session_id}</div>',{            
 												getTime: function (date){
