@@ -3,7 +3,7 @@ Ext.define('Prdc.store.ScheduleStore2',{
 	model:'Prdc.model.Schedule',
 	proxy: {
 		type:'jsonp',
-		url:'http://prdc.heroku.com/Schedule/2.js',
+		url:'http://prdc.heroku.com/Schedule/days/2.js',
 		reader:{
 			type:'json',
 			root:'day'

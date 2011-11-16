@@ -211,4 +211,16 @@ div#main_menu  img{
   	font-size:0.8em;
 	color:#678;
 }
- 
+
+.left {
+	display: block;
+	float: left;
+}
+
+.box {
+	margin-left: 5em;
+	-webkit-box-radius: 3px;
+		-webkit-box-shadow: 3px 3px 3px #666;
+	
+
+}

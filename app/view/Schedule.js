@@ -1,6 +1,7 @@
 Ext.define('Prdc.view.Schedule', {
 	id:'Schedule',
 	extend: 'Ext.Panel',
+	requires:['Prdc.view.roomschedule'],
 	config: {
 			fullscreen:true,
 			styleHtmlContent: true,
@@ -25,27 +26,11 @@ Ext.define('Prdc.view.Schedule', {
 					layout:'card',
 					    items: [
 									{
-										xtype: 'list',
-										items: {
-											xtype: 'toolbar',
-											dock: 'top',
-											title: 'Room 1'
-										},
+										xtype: 'roomSchedule',
+										store: 'ScheduleStore1'
 
-										store: {
-											fields: ['name'],
-											data: [
-												{name: 'Rob'},
-												{name: 'Ed'},
-												{name: 'Jacky'},
-												{name: 'Jamie'},
-												{name: 'Tommy'},
-												{name: 'Abe'}
-											]
-										},
 
-										itemTpl: '{name}'
-									},
+									}
 
 								]
 					
