@@ -10,7 +10,8 @@ Ext.define('Prdc.store.ScheduleStore1',{
 		}
 	},
     autoLoad:true,
-	getGroupString: function(r){
+    sorters: 'start',	
+	getGroupString: function(r) {
 		return r.get('room')
 	},
 });

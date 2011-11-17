@@ -215,12 +215,26 @@ div#main_menu  img{
 .left {
 	display: block;
 	float: left;
+	color: #FFF;
+	font-size:1.5em; 
 }
 
 .box {
-	margin-left: 5em;
-	-webkit-box-radius: 3px;
-		-webkit-box-shadow: 3px 3px 3px #666;
-	
+	margin-left: 6em;
+	-webkit-border-radius: 3px;
+	width: 22em;
+	height: 5em;
+	font-size:1.3em;  
+	padding:3px;
+	text-align: center;
+	border: solid 1px #bbb;
+	-webkit-box-shadow: 3px 3px 2px #666;
+	background: rgba(0,0,0,0.1);
+	}
 
+.schedule {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(80, 80, 80, .15)), to(rgba(50, 50, 50, .25))), -webkit-gradient(linear, left top, right bottom, color-stop(0, rgba(80, 80, 80, 0)), color-stop(0.3, rgba(70, 70, 70, .15)), color-stop(0.501, rgba(60, 60, 60, 0)), color-stop(1, rgba(64, 64, 64, 0)));
+	text-shadow:  1px 1px 0 rgba(125, 125, 125, 0.3);
+	-webkit-text-shadow:  1px 1px 0 rgba(125, 125, 125, 0.3);
 }
+

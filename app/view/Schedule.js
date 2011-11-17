@@ -29,20 +29,31 @@ Ext.define('Prdc.view.Schedule', {
 				
 			
 			var scheStoreDay1 = Ext.data.StoreManager.lookup('ScheduleStore1');
+			var sessionstore = Ext.data.StoreManager.lookup('SessionsStore');
+			
 			var groups = scheStoreDay1.getGroups();
-			var cards = [Ext.create('Ext.Panel', {html :"   ", layout:'fit',style: 'background-color: #759E60'})];
+			var cards = [];
 			for(var i =0; i < groups.length; i++){
 
 				var s =  Ext.create('Ext.data.Store', {
 						  model:'Prdc.model.Schedule',
 				 });
-				for(var j = 0; j < groups[i].children.length; j ++){
-					s.add(groups[i].children[j].data);
-				};
+
 								
 				var p = Ext.create('Prdc.view.roomschedule', {store :s});
-				//var p = Ext.create('Ext.Panel', {html :groups[i].name, layout:'fit',style: 'background-color: #759E60'});
-				cards.push( Ext.create('Ext.Panel', {layout:'card', items :[p]}));
+				
+				cards.push( Ext.create('Ext.Panel', {layout:'card',  items :[{xtype: 'toolbar', title:'day1',docked:'top'},p]}));
+								
+				for(var j = 0; j < groups[i].children.length; j ++){
+					var m=groups[i].children[j].data;
+					if (m.session_id){
+						var idx = sessionstore.find('id', m.session_id);
+						if (idx > -1){
+							m.title = sessionstore.getAt(idx).data.title;
+						}
+					}
+					s.add(m);
+				};
 			}
 			
 			var cs = Ext.create('Ext.Carousel', {
