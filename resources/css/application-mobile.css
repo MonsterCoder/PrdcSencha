@@ -216,15 +216,15 @@ div#main_menu  img{
 	display: block;
 	float: left;
 	color: #FFF;
-	font-size:1.5em; 
+	font-size:1.3em; 
 }
 
 .box {
-	margin-left: 6em;
+	margin-left: 4em;
 	-webkit-border-radius: 3px;
-	width: 22em;
+	width: 16em;
 	height: 5em;
-	font-size:1.3em;  
+	font-size:1.2em;  
 	padding:3px;
 	text-align: center;
 	border: solid 1px #bbb;
